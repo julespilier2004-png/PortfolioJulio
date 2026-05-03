@@ -1,0 +1,61 @@
+
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#080810;--bg2:#0f0f1a;--bg3:#161624;
+  --border:#22223a;--accent:#c8f060;
+  --text:#ede9f0;--muted:#666688;
+}
+body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.65;padding:48px 40px}
+.sec-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);margin-bottom:12px;font-weight:500}
+.sec-title{font-family:'Syne',sans-serif;font-size:28px;font-weight:700;letter-spacing:-1px;margin-bottom:40px}
+.proj-badges{display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap}
+.badge{padding:4px 12px;border-radius:3px;font-size:10px;font-weight:500;letter-spacing:.8px;text-transform:uppercase}
+.badge-school{background:#141f0a;color:#8fcc50;border:1px solid #1e3510}
+.badge-pro{background:#0f0a22;color:#a090ff;border:1px solid #1e1540}
+.badge-blue{background:#0a1520;color:#60b8f0;border:1px solid #103050}
+.proj-header{display:flex;align-items:flex-start;justify-content:space-between;gap:32px;margin-bottom:36px}
+.proj-title{font-family:'Syne',sans-serif;font-size:clamp(20px,3vw,32px);font-weight:700;letter-spacing:-1px;margin-bottom:8px;line-height:1.1}
+.proj-period{font-size:12px;color:var(--muted);letter-spacing:.3px}
+.proj-num{font-family:'Syne',sans-serif;font-size:72px;font-weight:800;color:var(--border);line-height:1;letter-spacing:-3px;user-select:none}
+.gallery{display:grid;gap:10px;margin-bottom:32px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g-main-side{grid-template-columns:1.6fr 1fr}
+.g-side-col{display:flex;flex-direction:column;gap:10px}
+.gal-img{border-radius:10px;overflow:hidden;background:var(--bg2);border:1px solid var(--border);position:relative}
+.gal-img img{width:100%;height:100%;object-fit:cover;display:block}
+.gal-img .lbl{position:absolute;bottom:0;left:0;right:0;padding:14px 12px 10px;background:linear-gradient(transparent,rgba(8,8,16,.85));font-size:10px;letter-spacing:.8px;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.justif-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
+.justif{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:20px 22px}
+.j-label{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:8px;font-weight:500}
+.justif p{font-size:13px;color:#9999bb;line-height:1.7}
+.acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.act-pill{padding:5px 13px;border:1px solid var(--border);border-radius:4px;font-size:11px;color:var(--muted);letter-spacing:.2px}
+</style>
+
+<style>
+.hero{min-height:80vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 60px;position:relative}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 80% 40%,rgba(124,97,255,.12) 0%,transparent 70%),radial-gradient(ellipse 40% 40% at 20% 70%,rgba(200,240,96,.06) 0%,transparent 60%);pointer-events:none}
+.eyebrow{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:24px;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:'';width:28px;height:1px;background:var(--accent);display:block}
+h1{font-family:'Syne',sans-serif;font-size:clamp(52px,10vw,100px);font-weight:800;line-height:.92;letter-spacing:-4px;margin-bottom:36px}
+h1 em{font-style:normal;color:var(--accent)}
+.hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px}
+.hero-desc{max-width:400px;color:var(--muted);font-size:15px;line-height:1.7;font-weight:300}
+.hero-cta{display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;padding:12px 24px;border-radius:6px;font-size:13px;font-weight:500;text-decoration:none;font-family:'DM Sans',sans-serif;letter-spacing:.3px}
+.btn-p{background:var(--accent);color:#080810}
+.btn-g{background:transparent;color:var(--text);border:1px solid var(--border)}
+</style>
+<section class="hero">
+  <div class="eyebrow">BTS Communication · Bloc E6 · Portfolio</div>
+  <h1>Jules<br><em>Pilier.</em></h1>
+  <div class="hero-bottom">
+    <p class="hero-desc">Étudiant en BTS Communication. Je conçois des identités visuelles, produis des supports print & digital, et pilote des campagnes du brief au bilan.</p>
+    <div class="hero-cta">
+      <a class="btn btn-p" href="#projets">Voir les projets</a>
+      <a class="btn btn-g" href="mailto:TON_EMAIL_ICI">Contact</a>
+    </div>
+  </div>
+</section>
